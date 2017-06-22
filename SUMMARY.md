@@ -1,9 +1,10 @@
 # Summary
 
-## Overview
+## Introduction
 
-* [My Awesome API](README.md)
+* [SmartInvs](README.md)
 
 ## Methods
 
 * [Defining Methods](methods.md)
+

@@ -8,7 +8,7 @@ First, get your `SmartInventory.Builder` item using the method `SmartInventory.b
 then build your inventory with the different parameters:
 
 | Parameter | Description | Default value |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------|:-----|
 | id | Sets the id of the inventory, so you can use it later to check if the player's opened inventory is your custom inventory, per example. | `unknown` |
 | title | Sets the title of the inventory. | Empty String |
 | type | Sets the type of the inventory. | `CHEST` |

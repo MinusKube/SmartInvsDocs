@@ -6,6 +6,8 @@ SmartInvs is a modern API for easily using inventories with Bukkit to make aweso
 
 _This API requires Java 8 to work._
 
+---
+
 ### Features
 
 * Inventories of any type \(workbench, chest, furnace, ...\)
@@ -69,9 +71,4 @@ And there is the result:
 If we click on the carrot, we receive the message `You clicked on a potato`,
 and if we click on the barrier, the inventory is closed.
 
-
-
-
-
-
-
+<hr>

@@ -15,10 +15,10 @@ then build your inventory with the different parameters:
 | size | Sets the rows and the columns amount of the inventory, for types supporting it, like chests. | 6 Rows, 9 Columns |
 | closeable | Defines if the inventory can be closed by the player or not. | `true` |
 | parent | Sets the parent of the inventory, so you can use it later to open it when the player clicks on a "Back" item, per example. | None |
-| listener | Adds an event listener for the inventory. (Can be called multiple times) | None |
+| listener | Adds an event listener for the inventory. (Can be called multiple times) <br> *Available events: `InventoryClickEvent`, `InventoryCloseEvent`, `InventoryOpenEvent`, `PluginDisableEvent`, `PlayerQuitEvent`, `InventoryDragEvent`* | None |
 | provider | **(Mandatory)** Sets the content provider for this inventory. | None |
 
-When all of your parameters are defined, use the method `build()` to create your SmartInventory. We recommend to put the inventory in a constant.
+When all of your parameters are defined, use the method `build()` to create your SmartInventory. We recommend to put the inventory in a constant in order to load it only once.
 
 ### Example
 ```java

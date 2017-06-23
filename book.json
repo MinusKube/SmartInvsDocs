@@ -1,8 +1,3 @@
 {
-    "plugins": ["theme-bandwidth"],
-    "pluginsConfig": {
-        "theme-api": {
-            "theme": "dark"
-        }
-    }
+    "plugins": ["theme-bandwidth"]
 }

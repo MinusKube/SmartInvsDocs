@@ -39,12 +39,12 @@ public class SimpleInventory implements InventoryProvider {
 
     @Override
     public void init(Player player, InventoryContents contents) {
-        contents.fillBorders(ClickableItem.fixedEmpty(new ItemStack(Material.STAINED_GLASS_PANE)));
+        contents.fillBorders(ClickableItem.empty(new ItemStack(Material.STAINED_GLASS_PANE)));
 
-        contents.set(1, 1, ClickableItem.fixed(new ItemStack(Material.CARROT_ITEM),
+        contents.set(1, 1, ClickableItem.of(new ItemStack(Material.CARROT_ITEM),
                 e -> player.sendMessage(ChatColor.GOLD + "You clicked on a potato.")));
 
-        contents.set(1, 7, ClickableItem.fixed(new ItemStack(Material.BARRIER),
+        contents.set(1, 7, ClickableItem.of(new ItemStack(Material.BARRIER),
                 e -> player.closeInventory()));
     }
 
@@ -58,7 +58,7 @@ public class SimpleInventory implements InventoryProvider {
         short durability = (short) random.nextInt(15);
 
         ItemStack glass = new ItemStack(Material.STAINED_GLASS_PANE, 1, durability);
-        contents.fillBorders(ClickableItem.fixedEmpty(glass));
+        contents.fillBorders(ClickableItem.empty(glass));
     }
 
 }

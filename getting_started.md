@@ -30,3 +30,5 @@ public static final SmartInventory INVENTORY = SmartInventory.builder()
         .closeable(false)
         .build();
 ```
+
+<hr>

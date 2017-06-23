@@ -33,13 +33,37 @@ public class MyProvider implements InventoryProvider {
 
     @Override
     public void init(Player player, InventoryContents contents) {
-        
+        for(int i = 0; i < 9; i += 2)
+            contents.fillColumn(i, ClickableItem.empty(new ItemStack(Material.BEDROCK)));
+
+        contents.set(1, 1, ClickableItem.of(new ItemStack(Material.COMPASS), e -> {
+            if(e.isLeftClick()) {
+                player.sendMessage(ChatColor.GOLD + "You left clicked on my compass! "
+                        + ChatColor.YELLOW + "Here is a carrot, you deserve it.");
+
+                contents.set(1, 1, ClickableItem.empty(new ItemStack(Material.CARROT_ITEM)));
+            }
+            else if(e.isRightClick()) {
+                player.sendMessage(ChatColor.DARK_RED + "Oh no! The right click was trapped! "
+                        + ChatColor.RED + "You found a stick...");
+
+                contents.set(1, 1, ClickableItem.empty(new ItemStack(Material.STICK)));
+            }
+        }));
     }
-    
+
+
     @Override
-    public void update(Player player, InventoryContents contents) {
-    
-    }
+    public void update(Player player, InventoryContents contents) {}
 
 }
 ```
+
+And this is the result of this provider, when applied to a chest inventory with 3 rows:
+
+![](/assets/1e366b7aa76fe.gif)
+
+
+In this example, I didn't used the `update` method, but you can use it exactly like the `init` method.
+
+<hr>

@@ -46,8 +46,7 @@ public void update(Player player, InventoryContents contents) {
         return;
 
     SlotIterator iter = contents.iterator("test").get();
-    System.out.println(iter.column());
-
+    
     if(iter.column() > 7)
         return;
 

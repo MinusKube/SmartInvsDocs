@@ -59,7 +59,7 @@ public class MyProvider implements InventoryProvider {
 }
 ```
 
-And this is the result of this provider, when applied to a chest inventory with 3 rows:
+And this is the result of this provider, when applied to a basic chest inventory with 3 rows:
 
 ![](/assets/1e366b7aa76fe.gif)
 

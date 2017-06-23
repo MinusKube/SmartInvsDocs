@@ -66,6 +66,11 @@ And there is the result:
 
 ![](/assets/444ecfe1e103b.gif)
 
-  
 If we click on the carrot, we receive the message "You clicked on a potato", and if we click on the barrier, the inventory is closed.
+
+
+
+
+
+
 

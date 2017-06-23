@@ -7,4 +7,5 @@
 ## Guide
 
 * [1. Getting Started](getting_started.md)
+* [2. Content Provider](content_provider.md)
 

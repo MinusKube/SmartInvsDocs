@@ -20,7 +20,7 @@ then build your inventory with the different parameters:
 
 When all of your parameters are defined, use the method `build()` to create your SmartInventory. We recommend to put the inventory in a constant.
 
-Example:
+### Example
 ```java
 public static final SmartInventory INVENTORY = SmartInventory.builder()
         .id("customInventory")

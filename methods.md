@@ -22,5 +22,11 @@ When all of your parameters are defined, use the method `build()` to create your
 
 Example:
 ```java
-
+public static final SmartInventory INVENTORY = SmartInventory.builder()
+        .id("customInventory")
+        .provider(new MyProvider())
+        .size(4, 9)
+        .title(ChatColor.RED + "Unclosable inventory!")
+        .closeable(false)
+        .build();
 ```

@@ -6,5 +6,5 @@
 
 ## Guide
 
-* [1. Getting Started](methods.md)
+* [1. Getting Started](getting_started.md)
 

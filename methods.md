@@ -1,6 +1,5 @@
-# Defining Methods
-
-Methods allow you to smoothly display code examples in different languages.
+# Getting Started
+We will see here how to create your first inventory
 
 {% method %}
 ## My first method

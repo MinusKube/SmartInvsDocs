@@ -4,7 +4,7 @@
 
 * [SmartInvs](README.md)
 
-## Methods
+## Guide
 
-* [Defining Methods](methods.md)
+* [1. Getting Started](methods.md)
 

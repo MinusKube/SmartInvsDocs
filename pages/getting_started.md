@@ -31,4 +31,9 @@ public static final SmartInventory INVENTORY = SmartInventory.builder()
         .build();
 ```
 
+Then, to open the inventory:
+```java
+MyInventory.INVENTORY.open(player);
+```
+
 <hr>

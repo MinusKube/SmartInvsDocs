@@ -30,6 +30,8 @@ You can use the `get()` method to get the item on the current position, this met
 The `row()` and the `column()` methods return the actual position of the iterator.
 The `ended()` method returns `true` if the iterator is at the last slot of the inventory, and `else` if it isn't.
 
+Finally, the `blacklist(int row, int column)` method lets you blacklist a slot to skip it automatically (it will not skip the last slot).
+
 ### Example
 ```java
 @Override

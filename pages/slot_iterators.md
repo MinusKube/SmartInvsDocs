@@ -6,7 +6,7 @@ You can iterate horizontally or vertically.
 ### Create an Iterator
 To create an iterator, use this method from the class `InventoryContents`:
 ```
-newIterator(SlotIterator.Type type, int startRwo, int startColumn)
+newIterator(SlotIterator.Type type, int startRow, int startColumn)
 ```
 But it will just create a new iterator without saving it anywhere, it can be useful in some cases, but if you want to save your iterator to the inventory, use this method instead:
 ```

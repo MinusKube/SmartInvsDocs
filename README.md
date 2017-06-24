@@ -71,7 +71,8 @@ And there is the result:
 If we click on the carrot, we receive the message `You clicked on a potato`,
 and if we click on the barrier, the inventory is closed.
 
-### Source
+### Useful links
 The source code is available on [Github](https://github.com/MinusKube/SmartInvs)!
+If you have some issues with the API, please [open an issue](https://github.com/MinusKube/SmartInvs/issues) on Github.
 
 <hr>

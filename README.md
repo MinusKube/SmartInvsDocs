@@ -1,4 +1,4 @@
-    ![](/assets/smart_invs.png)
+![](/assets/smart_invs.png)
 
 ## SmartInvs
 

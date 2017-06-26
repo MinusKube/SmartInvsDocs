@@ -21,6 +21,39 @@ _This API requires Java 8 to work._
 * Actions when player clicks on an item
 * Update methods to edit the content of the inventory every tick
 
+### Usage
+To use the SmartInvs API, put it in the `plugins` folder of your server, add it to your dependencies in your plugin.yml (e.g. `depend: [SmartInvs]`) and add it to the dependencies in your IDE.
+
+You can download the latest version on the [Releases page](https://github.com/MinusKube/SmartInvs/releases) on Github.
+
+You can also use a build system:
+#### Gradle
+```gradle
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/releases'
+    }
+}
+
+dependencies {
+    compile 'fr.minuskube.inv:smart-invs:1.0.1'
+}
+```
+
+#### Maven
+```xml
+<repository>
+  <id>sonatype-releases</id>
+  <url>https://oss.sonatype.org/content/repositories/releases</url>
+</repository>
+
+<dependency>
+  <groupId>fr.minuskube.inv</groupId>
+  <artifactId>smart-invs</artifactId>
+  <version>1.0.1</version>
+</dependency>
+```
+
 ### Preview
 
 Here is a simple preview of an inventory.

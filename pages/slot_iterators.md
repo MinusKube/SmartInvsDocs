@@ -28,6 +28,8 @@ The `previous()` method does the same thing, but it goes to one column/row backw
 You can use the `get()` method to get the item on the current position, this method also returns an `Optional`.
 
 The `row()` and the `column()` methods return the actual position of the iterator.
+The `row(int)` and the `column(int)` methods define the position of the iterator.
+
 The `ended()` method returns `true` if the iterator is at the last slot of the inventory, and `else` if it isn't.
 
 Finally, the `blacklist(int row, int column)` method lets you blacklist a slot to skip it automatically (it will not skip the last slot).
@@ -39,12 +41,12 @@ public void init(Player player, InventoryContents contents) {
     contents.newIterator("test", SlotIterator.Type.HORIZONTAL, 1, 1);
 }
 
-
-private int state;
-
 @Override
 public void update(Player player, InventoryContents contents) {
-    if(++state % 5 != 0)
+    int state = contents.property("state", 0);
+    contents.setProperty("state", state + 1);
+    
+    if(state % 5 != 0)
         return;
 
     SlotIterator iter = contents.iterator("test").get();

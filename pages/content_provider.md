@@ -27,6 +27,10 @@ ClickableItem item = ClickableItem.of(new ItemStack(Material.POTATO_ITEM, 2), e 
 });
 ```
 
+If you need to set properties to your InventoryContents, you can use the `setProperty(String name, Object value)` method, to get the properties, use `property(String name)` or `property(String name, T def)` to provide a defaultlue.
+
+> Each opened inventory has a different InventoryContents, so when you create an iterator or set a property, it will only be saved for the opened inventory for the actual player.
+
 ### Example
 ```java
 public class MyProvider implements InventoryProvider {

@@ -34,7 +34,7 @@ repositories {
 }
 
 dependencies {
-    compile 'fr.minuskube.inv:smart-invs:1.0.1'
+    compile 'fr.minuskube.inv:smart-invs:1.1.0'
 }
 ```
 
@@ -43,7 +43,7 @@ dependencies {
 <dependency>
   <groupId>fr.minuskube.inv</groupId>
   <artifactId>smart-invs</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
 </dependency>
 ```
 
@@ -74,11 +74,12 @@ public class SimpleInventory implements InventoryProvider {
                 e -> player.closeInventory()));
     }
 
-    private int ticks = 0;
-
     @Override
     public void update(Player player, InventoryContents contents) {
-        if(++ticks % 5 != 0)
+        int state = contents.property("state", 0);
+        contents.setProperty("state", state + 1);
+        
+        if(state % 5 != 0)
             return;
 
         short durability = (short) random.nextInt(15);

@@ -36,4 +36,20 @@ Then, to open the inventory:
 MyInventory.INVENTORY.open(player);
 ```
 
+### Context-dependent Example
+```java
+public static SmartInventory getInventory(Player player) {
+        return SmartInventory.builder()
+                .provider(new MyProvider(player))
+                .size(3, 9)
+                .title("Inventory of " + player.getName())
+                .build();
+}
+```
+
+Then:
+```java
+MyInventory.getInventory(targetPlayer).open(player);
+```
+
 <hr>

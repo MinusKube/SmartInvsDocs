@@ -29,10 +29,11 @@ ClickableItem item = ClickableItem.of(new ItemStack(Material.POTATO_ITEM, 2), e 
 
 All the SmartInvs methods which asks for a `row` and a `column` have an overload method which asks for a `SlotPos` you can build using `SlotPos.of(row, column)`, these SlotPos are totally immutables.
 
-This is a list of all the `InventoryContents` methods you can use:
+This is a list of all the `InventoryContents` methods you can use to play with the inventory items:
 
 | Method | Description |
 | ------ |:------------|
+| `all()` | Returns all the inventory items |
 | `get(row, column)` | Returns the items at the given row and column |
 | `set(row, column, item)` | Sets the item at the given row and column |
 | `firstEmpty()` | Returns the first empty slot |

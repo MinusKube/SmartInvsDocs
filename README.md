@@ -22,7 +22,9 @@ _This API requires Java 8 to work._
 * Update methods to edit the content of the inventory every tick
 
 ### Usage
-To use the SmartInvs API, put it in the `plugins` folder of your server, add it to your dependencies in your plugin.yml (e.g. `depend: [SmartInvs]`) and add it to the dependencies in your IDE.
+To use the SmartInvs API, either:
+- Put it in the `plugins` folder of your server, add it to your dependencies in your plugin.yml (e.g. `depend: [SmartInvs]`) and add it to the dependencies in your IDE.
+- Put it inside your plugin jar, initialize an `InventoryManager` in your plugin (don't forget to call the `init()` method), and add a `.manager(invManager)` to your SmartInventory Builders.
 
 You can download the latest version on the [Releases page](https://github.com/MinusKube/SmartInvs/releases) on Github.
 

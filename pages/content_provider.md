@@ -36,7 +36,12 @@ This is a list of all the `InventoryContents` methods you can use:
 | `get(row, column)` | Returns the items at the given row and column |
 | `set(row, column, item)` | Sets the item at the given row and column |
 | `firstEmpty()` | Returns the first empty slot |
-| `add(item)` | Adds the item to the first empty slot |
+| `add(item)` | Adds the item to the first empty slot, if possible |
+| `fill(item)` | Fills the inventory with the given item |
+| `fillRow(row, item)` | Fills the given row with the given item |
+| `fillColumn(column, item)` | Fills the given column with the given item |
+| `fillBorders(item)` | Fills the inventory borders with the given item |
+| `fillRect(fromRow, fromColumn, toRow, toColumn, item)` | Fills a rectangle made of the given boundaries with the given item |
 
 If you need to set properties to your InventoryContents, you can use the `setProperty(String name, Object value)` method, to get the properties, use `property(String name)` or `property(String name, T def)` to provide a default value.
 

@@ -32,7 +32,7 @@ The `row(int)` and the `column(int)` methods define the position of the iterator
 
 The `ended()` method returns `true` if the iterator is at the last slot of the inventory, and `else` if it isn't.
 
-You can allow the iterator to override existing items by calling the `allowOverride(boolean)` method.
+You can allow the iterator to override existing items by calling the `allowOverride(boolean)` method, the default value is `true`.
 
 Finally, the `blacklist(int row, int column)` method lets you blacklist a slot to skip it automatically (it will not skip the last slot).
 

@@ -46,9 +46,9 @@ public void init(Player player, InventoryContents contents) {
     pagination.addToIterator(contents.newIterator(SlotIterator.Type.HORIZONTAL, 1, 1));
 
     contents.set(2, 3, ClickableItem.of(new ItemStack(Material.ARROW),
-            e -> INVENTORY.open(player, pagination.next().getPage())));
-    contents.set(2, 5, ClickableItem.of(new ItemStack(Material.ARROW),
             e -> INVENTORY.open(player, pagination.previous().getPage())));
+    contents.set(2, 5, ClickableItem.of(new ItemStack(Material.ARROW),
+            e -> INVENTORY.open(player, pagination.next().getPage())));
 }
 
 @Override

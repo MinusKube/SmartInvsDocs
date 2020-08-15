@@ -1,11 +1,13 @@
-# Paginations
+# 4. Paginations
 
 With the pagination system of SmartInvs, you can easily create pages for your inventories.
 
-### Get a Pagination
+## Get a Pagination
+
 To get the Pagination object of your `InventoryContents`, simply call its `pagination()` method.
 
-### Use a Pagination
+## Use a Pagination
+
 Now, we'll see how to use this pagination in our inventory.
 
 First, we need to set some informations for our pagination, we'll use the `setItems(ClickableItem...)` method to set all our items to the object.
@@ -14,14 +16,15 @@ Then we can also use the `setItemsPerPage(int)` method to tell to our pagination
 
 Okay, now, let's see the available getters:
 
-| Method Name   | Description  |
-| ------------- |:-------------|
-| getPage       | Returns the actual page |
-| getPageItems  | Returns the items for the actual page, the returned array will always be of the size of the pagination's items per page |
-| isFirst       | Returns true if the actual page is the first page, else it returns false   |
-| isLast        | Returns true if the actual page is the first page for the given items, else it returns false |
+| Method Name | Description |
+| :--- | :--- |
+| getPage | Returns the actual page |
+| getPageItems | Returns the items for the actual page, the returned array will always be of the size of the pagination's items per page |
+| isFirst | Returns true if the actual page is the first page, else it returns false |
+| isLast | Returns true if the actual page is the first page for the given items, else it returns false |
 
 Then to change the actual page, several methods are availables:
+
 * `first()` to set the page to the first
 * `last()` to set the page to the last non-empty
 * `previous()` to go one page backward, if possible
@@ -29,7 +32,8 @@ Then to change the actual page, several methods are availables:
 
 And finally, to add our items to our inventory, we can either use the `getPageItems()` method and put the items manually, or we can use `addToIterator(SlotIterator)` to automatically add our items from a Slot Iterator.
 
-### Example
+## Example
+
 ```java
 @Override
 public void init(Player player, InventoryContents contents) {
@@ -57,6 +61,5 @@ public void update(Player player, InventoryContents contents) {}
 
 And this is the result, when applied to a basic chest inventory with 3 rows:
 
-![](/assets/95c42f7a19e1e.gif)
+![](../.gitbook/assets/95c42f7a19e1e.gif)
 
-<hr>

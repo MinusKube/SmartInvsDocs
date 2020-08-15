@@ -1,6 +1,6 @@
-# Introduction
+# SmartInvs
 
-![](.gitbook/assets/smart_invs.png)
+![](../.gitbook/assets/smart_invs.png)
 
 ## SmartInvs
 
@@ -100,7 +100,7 @@ public class SimpleInventory implements InventoryProvider {
 
 And there is the result:
 
-![](.gitbook/assets/444ecfe1e103b.gif)
+![](../.gitbook/assets/444ecfe1e103b.gif)
 
 If we click on the carrot, we receive the message `You clicked on a potato`, and if we click on the barrier, the inventory is closed.
 
